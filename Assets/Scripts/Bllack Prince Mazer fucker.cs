@@ -80,6 +80,10 @@ public class BllackPrinceMazerfucker : MonoBehaviour
     {
         if (!((x_start == 16 || x_start == 1) && y_start == 9) && !((x_start == 16 || x_start == 1) && y_start == 8))
         {
+            if (map[y_start][x_start] == true)
+            {
+                return;
+            }
             map[y_start][x_start] = true;
             if (x_start > 0 && rnd.Next(0, 99) < 35)
             {
